@@ -50,6 +50,10 @@ body {
         margin: 0px;
 }
 
+#result {
+        font-weight: 800;
+}
+
 #score /*76*/ {
         font-weight: 800;
         font-size: 54px;
@@ -98,10 +102,6 @@ body {
         padding-bottom: 10px;
 }
 
-#result {
-        font-weight: 800;
-}
-
 .subjects {
         display: flex;
         justify-content: space-between;
@@ -135,6 +135,11 @@ body {
         background-color: hsl(235, 100%, 95%);
 }
 
+.icons {
+        display: flex;
+        gap: 5px;
+}
+
 #continue {
         background: linear-gradient(to right, hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%));
         color: white;
@@ -150,9 +155,4 @@ body {
         padding: 40px;
         font-weight: bold;
         font-size: x-large;
-}
-
-.icons {
-        display: flex;
-        gap: 5px;
 }
