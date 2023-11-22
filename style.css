@@ -18,6 +18,7 @@ body {
         margin-top: 100px;
         font-family: 'Hanken', sans-serif;
         font-size: 18px;
+        background-color: hsl(221, 100%, 96%);
 }
 
 .parent-container {
@@ -67,12 +68,19 @@ body {
         text-align: center;
 }
 
+#great {
+        font-weight: bold;
+        font-size: larger;
+        margin-bottom: 0px;
+}
+
 .second-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 50vh;
         margin-left: 20px;
+        background: hsl(221, 100%, 96%);
 }
 
 #summary {
@@ -116,3 +124,6 @@ body {
         background-color: hsl(235, 100%, 90%);
 }
 
+button {
+        background-color: linear-gradient(to right, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
