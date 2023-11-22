@@ -1,6 +1,23 @@
+@font-face {
+        font-family: 'Hanken';
+        src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+        font-weight: normal;
+
+        font-weight: bold;
+        src: url(./assets/fonts/static/HankenGrotesk-Bold.ttf);
+
+        font-weight: 800;
+        src: url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+
+        font-weight: 500;
+        src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
 body {
         width: 1440px;
         margin-top: 100px;
+        font-family: 'Hanken', sans-serif;
+        font-size: 18px;
 }
 
 .parent-container {
@@ -8,7 +25,7 @@ body {
         justify-content: center;
         align-items: center;
         margin: auto;
-        width: 500px;
+        width: 600px;
         gap: 20px;
 }
 
@@ -16,19 +33,27 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
         color: white;
         padding: 24px;
         border-radius: 40px;
-        height: 60vh;
+        height: 50vh;
 }
 
+#score /*76*/ {
+        font-weight: 800;
+        font-size: 54px;
+} 
+
 #circle{
-        border: solid black;
-        border-radius: 100%;
+        border-style: none;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
         padding: 40px;
         text-align: center;
+        background: linear-gradient(to right, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
 #remark {
@@ -38,35 +63,56 @@ body {
         align-items: center;
         flex-wrap: wrap;
 }
+#remark p {
+        text-align: center;
+}
 
 .second-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        gap: 30px;
-        height: 60vh;
+        justify-content: space-between;
+        height: 50vh;
         margin-left: 20px;
+}
+
+#summary {
+        font-weight: bold;
+        padding-bottom: 10px;
+}
+
+#result {
+        font-weight: 800;
 }
 
 .subjects {
         display: flex;
         justify-content: space-between;
-        gap: 40px;
-        border-radius: 3px;
-        padding: 10px;
+        gap: 80px;
+        border-radius: 8px;
+        padding: 20px;
         border-style: none;
+}
+
+#subjects /* subject boxes */ {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 }
 
 #reaction {
         color: hsl(0, 100%, 67%);
+        background-color: hsl(0, 77%, 92%);
 }
 #memory {
         color: hsl(39, 100%, 56%);
+        background-color: hsl(39, 73%, 85%);
 }
 #verbal {
-        color: hsl(39, 100%, 56%);
+        color: hsl(166, 100%, 37%);
+        background-color: hsl(166, 65%, 87%);
 }
 #visual {
         color: hsl(234, 85%, 45%);
+        background-color: hsl(235, 100%, 90%);
 }
 
